@@ -218,15 +218,14 @@ export default function ReactionSpeedGame() {
           <div className="flex items-center gap-2">
             <button
               onClick={() => setSfx((v) => !v)}
-              className={`px-3 py-2 rounded-2xl shadow-sm text-sm font-semibold transition border border-white/10 hover:border-white/20 ${
-                sfx ? "bg-emerald-600/20" : "bg-slate-700/40"
+              className={`px-3 py-2 rounded-2xl shadow-sm text-sm font-semibold transition border border-white/10 hover:border-white/20 bg-black
               }`}
             >
               {sfx ? "🔊 SFX On" : "🔈 SFX Off"}
             </button>
             <button
               onClick={restart}
-              className="px-3 py-2 rounded-2xl shadow-sm text-sm font-semibold transition bg-indigo-600 hover:bg-indigo-500"
+              className="px-3 py-2 rounded-2xl shadow-sm text-sm font-semibold transition bg-black hover:bg-indigo-500"
             >
               Restart
             </button>
@@ -268,7 +267,7 @@ export default function ReactionSpeedGame() {
               <motion.button
                 onClick={startCountdown}
                 whileTap={{ scale: 0.97 }}
-                className="px-6 py-3 rounded-2xl bg-indigo-600 hover:bg-indigo-500 font-semibold shadow-lg"
+                className="px-6 py-3 rounded-2xl bg-black hover:bg-indigo-500 font-semibold shadow-lg"
               >
                 Start Game
               </motion.button>
@@ -319,7 +318,7 @@ export default function ReactionSpeedGame() {
             {phase === "running" && (
               <button
                 onClick={togglePause}
-                className="px-4 py-2 rounded-xl bg-slate-700/70 hover:bg-slate-700 border border-white/10 backdrop-blur text-sm font-medium"
+                className="px-4 py-2 rounded-xl bg-black hover:bg-slate-700 border border-white/10 backdrop-blur text-sm font-medium"
               >
                 {isPaused ? "Resume" : "Pause"}
               </button>
@@ -379,7 +378,7 @@ function GameOverCard({ score, best, onRestart }:any) {
       </div>
       <button
         onClick={onRestart}
-        className="px-5 py-3 rounded-2xl bg-indigo-600 hover:bg-indigo-500 font-semibold shadow"
+        className="px-5 py-3 rounded-2xl bg-black hover:bg-indigo-500 font-semibold shadow"
       >
         Restart
       </button>
