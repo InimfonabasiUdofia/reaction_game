@@ -1,69 +1,53 @@
-# React + TypeScript + Vite
+🚀 Reaction Speed – Mini Browser Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fast-paced reaction time game built with React, Tailwind CSS, and Framer Motion.
+Click/tap the glowing target before the timer bar runs out. Each round gets faster, testing your reflexes!
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+**🎮 Features**
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+⚡ Increasing Difficulty – timer gets shorter every round.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+🏆 Score & Best Score Tracking – best score saved in localStorage.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+⏸ Pause / Resume – take a break mid-game.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+🔊 Sound Effects – toggle on/off (Web Audio API).
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+✨ Smooth Animations – powered by Framer Motion.
+
+📱 Responsive UI – mobile-friendly design with Tailwind CSS.
+
+📊 Mock Leaderboard – JSON stub with sample scores.
+
+🔄 Restart Button – quick reset anytime.
+
+
+
+**📂 Tech Stack**
+
+-React
+
+-Vite
+
+-Tailwind CSS
+
+-Framer Motion
+
+
+
+
+**🚦 How to Play**
+
+Click Start Game.
+
+Wait for the countdown → target appears.
+
+Tap/click the glowing shape before the bar empties.
+
+Each hit = +1 score, game gets faster.
+
+Miss = Game Over. Try to beat your best!
