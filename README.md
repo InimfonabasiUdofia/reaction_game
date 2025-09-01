@@ -3,7 +3,11 @@
 A fast-paced reaction time game built with React, Tailwind CSS, and Framer Motion.
 Click/tap the glowing target before the timer bar runs out. Each round gets faster, testing your reflexes!
 
-🎮 Features
+
+
+
+
+**🎮 Features**
 
 ⚡ Increasing Difficulty – timer gets shorter every round.
 
@@ -21,18 +25,22 @@ Click/tap the glowing target before the timer bar runs out. Each round gets fast
 
 🔄 Restart Button – quick reset anytime.
 
-📂 Tech Stack
 
-React
 
-Vite
- or Next.js (works with either)
+**📂 Tech Stack**
 
-Tailwind CSS
+-React
 
-Framer Motion
+-Vite
 
-🚦 How to Play
+-Tailwind CSS
+
+-Framer Motion
+
+
+
+
+**🚦 How to Play**
 
 Click Start Game.
 
